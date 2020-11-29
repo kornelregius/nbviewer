@@ -141,10 +141,10 @@ class LocalFileHandler(RenderingHandler):
             await self.cache_and_finish(html)
             return
 
-        is_download = self.get_query_arguments("download")
-        if is_download:
-            await self.download(fullpath)
-            return
+#        is_download = self.get_query_arguments("download")
+#        if is_download:
+#            await self.download(fullpath)
+#            return
 
         return fullpath
 
