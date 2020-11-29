@@ -595,6 +595,7 @@ class NBViewer(Application):
 
         # This would be better defined in a class
         self.config.HTMLExporter.template_file = "basic"
+        self.config.HTMLExporter.exclude_input = True
         self.config.SlidesExporter.template_file = "slides_reveal"
 
         self.config.TemplateExporter.template_path = [
